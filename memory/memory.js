@@ -4,13 +4,11 @@ export const PAIRS = "aabbccddeeffgghhiijjkkllmmooppqqrrss"
 const board = generateBoard(9, 4)
 printBoard(board)
 
-console.log(board)
-
 const xInput = prompt("X: ")
 const yInput = prompt("Y: ")
 
 const selectCard = function (y, x) {
-  board[y][x].revealed = true
+  board[y - 1][x - 1][1] = true
   printBoard(board)
 }
 

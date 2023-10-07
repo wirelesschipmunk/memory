@@ -36,7 +36,7 @@ export function generateBoard(w, h) {
         if (indexesUseable.has(item)) {
           indexesUseable.delete(item)
 
-          row.push({ value: PAIRS[item], revealed: false })
+          row.push([PAIRS[item], false])
           break
         }
       }
